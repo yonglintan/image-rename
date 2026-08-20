@@ -9,4 +9,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 
+# Install uv and uvx binaries from the Astral SH GitHub Container Registry
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+ENV UV_LINK_MODE=copy
