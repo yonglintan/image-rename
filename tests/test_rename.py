@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from PIL import ExifTags, Image, UnidentifiedImageError
 
-from image_rename.rename import rename_images
+from image_rename.core import rename_images
 
 EXIF_DATE_FORMAT = "%Y:%m:%d %H:%M:%S"
 
