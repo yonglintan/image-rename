@@ -50,7 +50,7 @@ def test_rename(img_dir):
         count += 1
 
     # Run rename function
-    rename_images(img_dir)
+    rename_images(img_dir, dry_run=False)
 
     # Check that the name of every image in directory starts with date that corresponds to EXIF data
     for file in img_dir.iterdir():
