@@ -31,6 +31,8 @@ def img_dir():
 
     img_dir.joinpath("not-an-image.txt").touch()
 
+    img_dir.joinpath("subdir").mkdir()
+
     yield img_dir
 
     # Cleanup
