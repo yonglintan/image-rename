@@ -64,7 +64,7 @@ def test_rename(img_dir):
                     "%Y%m%d-%H%M%S"
                 )
                 assert file.name.startswith(expected)
-        except UnidentifiedImageError:
+        except UnidentifiedImageError, IsADirectoryError:
             continue
 
     # Check that the number of items in the directory is the same as before
