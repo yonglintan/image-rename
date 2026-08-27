@@ -30,14 +30,16 @@ def img_dir():
         img.save(img_dir / f"test{i}.jpeg", exif=exif.tobytes())
 
     img_dir.joinpath("not-an-image.txt").touch()
-
-    img_dir.joinpath("subdir").mkdir()
+    img_dir.joinpath("subdir").mkdir(exist_ok=True)
 
     yield img_dir
 
     # Cleanup
     for file in img_dir.iterdir():
-        file.unlink(missing_ok=True)
+        if file.is_dir():
+            file.rmdir()
+        else:
+            file.unlink(missing_ok=True)
     img_dir.rmdir()
 
 
