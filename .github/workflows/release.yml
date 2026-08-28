@@ -27,8 +27,12 @@ jobs:
 
       - name: Build executable with PyInstaller
         run: uv run --with pyinstaller pyinstaller image-rename.spec
+      
+      - name: Archive built folder
+        run: Compress-Archive -Path dist\image-rename -DestinationPath dist\image-rename.zip
 
       - name: Create GitHub Release and Upload Binary
         uses: softprops/action-gh-release@v3
         with:
-          files: dist/image-rename/
+          files: dist/image-rename.zip
+          fail_on_unmatched_files: true
