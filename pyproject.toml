@@ -1,7 +1,7 @@
 [project]
 name = "image-rename"
 version = "0.1.0"
-description = "Add your description here"
+description = "Simple utility for bulk renaming images in a chosen folder according to date and time of creation image metadata"
 readme = "README.md"
 authors = [
     { name = "yonglin", email = "yonglintan@gmail.com" }
