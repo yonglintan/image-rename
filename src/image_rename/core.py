@@ -36,7 +36,7 @@ def plan(imgDir: Path, suffix: str | None):
                 i += 1
             changes[str(newPath)] = str(fp)
 
-        except UnidentifiedImageError, IsADirectoryError:
+        except UnidentifiedImageError, IsADirectoryError, PermissionError, KeyError:
             changes[str(fp)] = str(fp)
             continue
 
