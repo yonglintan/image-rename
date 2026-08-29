@@ -1,3 +1,9 @@
+## 0.1.1 (2026-08-29)
+
+### Fix
+
+- handle unhandled directory open error on windows
+
 ## 0.1.0 (2026-08-28)
 
 ### Feat
