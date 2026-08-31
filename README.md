@@ -4,7 +4,7 @@
 
 # Installation
 
-Download the latest `image-rename.zip` release from the releases section. Extract the zipped archive into a folder of your choosing (`C:\Users\<YOUR USERNAME>` is good if unsure). 
+Download the latest `image-rename.zip` release from the releases section. Extract the zipped archive into a directory of your choosing (`C:\Users\<YOUR USERNAME>` is good if unsure). 
 
 # Usage
 
@@ -12,12 +12,12 @@ Open Windows Powershell and type `PATH\TO\image-rename\image-rename.exe PATH\TO\
 
 ## Example Usage
 
-Assuming I extracted the zipped archive to `C:\Users\<YOUR USERNAME>`, and I want to rename images in the folder `C:\Users\<YOUR USERNAME>\Pictures\june`:
+Assuming I extracted the zipped archive to `C:\Users\<YOUR USERNAME>`, and I want to rename images in the directory `C:\Users\<YOUR USERNAME>\Pictures\june`:
 - I open Windows Powershell. A prompt is shown with the directory `C:\Users\<YOUR USERNAME>`. This my current working directory.
-- Since `image-rename.exe` is in the folder `image-rename` which in turn is in my current working directory `C:\Users\<YOUR USERNAME>`, I simply type `image-rename\image-rename.exe Pictures\june` into the prompt and hit enter. This shows me a preview of how the files will be renamed.
+- Since `image-rename.exe` is in the directory `image-rename` which in turn is in my current working directory `C:\Users\<YOUR USERNAME>`, I simply type `image-rename\image-rename.exe Pictures\june` into the prompt and hit enter. This shows me a preview of how the files will be renamed.
 - I decide I actually want to add a suffix. I type `image-rename\image-rename.exe --suffix chiangmai Pictures\june` and hit enter. This again shows me a preview of how the images will be renamed, but this time the new names have the suffix "chiangmai".
 - I decide this looks good. I enter `image-rename\image-rename.exe --suffix chiangmai --no-dry-run Pictures\june`, and the images are renamed.
 
 # Uninstallation
 
-Simply delete both the downloaded zip file and the extracted folder and the program will be completely removed.
+Simply delete both the downloaded zip file and the extracted files and the program will be completely removed.
